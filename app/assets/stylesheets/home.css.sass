@@ -2,20 +2,112 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$statsSize : 1200px
 
 html, body 
-  width : 2000px
-  height : 1000px
+  width : 100%
+  height : 100%
   margin : 0px
   padding : 0px
   background-color : black
-
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif  
   #mainMap
     width : 2000px
     height : 1000px
 
-  #statsBox
-    width : 400px
-    height : 400px
-    background-color: black
-    
+  .statsBox
+    width : $statsSize 
+    height : $statsSize 
+    background-color: #333333
+    color: white
+    position : absolute 
+    top : -293px
+    right : -571px
+    -webkit-border-radius: $statsSize 
+    -moz-border-radius: $statsSize 
+    border-radius: $statsSize 
+
+    a
+      position: absolute
+      left: 550px
+      top: 320px
+      color: white 
+      text-decoration: none
+
+    h1
+      position : absolute
+      top : 350px
+      left : 160px
+      width : 500px
+    > p
+      position: absolute
+      top: 800px
+      width: 450px
+      left: 160px
+      font-size: 23px
+      color : #666666
+
+    ul
+      position: absolute
+      top: 407px
+      left: 40px
+      font-size: 25px
+      li
+        img 
+          display: inline-block
+          vertical-align: middle
+          margin-bottom: 30px
+
+        p 
+          display: inline-block
+          vertical-align: middle
+          margin-top: -20px
+          margin-left: 10px
+
+  ul 
+    list-style : none
+  
+  #home
+    color: white 
+    width: 100%
+    height: 100%
+    padding: 30px
+    margin: 0px
+    background-image: url("/assets/background.png")
+    text-align: center
+    h1
+      font-size: 50px
+      font-weight: 50
+    #symbols
+      display: inline-block
+      width: 300px
+      img 
+        width: 150px
+        display: inline-block
+        vertical-align: middle 
+      span
+        display: inline-block
+        vertical-align: middle 
+        font-size: 20px
+        margin-left: 20px
+
+      margin-top: 200px
+    #buttons
+      margin-top: 200px
+      display: inline-block
+      img 
+        width: 100px
+footer 
+  color: white 
+  padding: 20px
+  position : absolute 
+  background-color: black
+  width: 100%
+  bottom: 0px
+  a
+    color : #5A2DB2
+    text-decoration: none
+  z-index: 1
+  left: 0px  
+  
+

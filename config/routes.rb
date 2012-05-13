@@ -48,6 +48,13 @@ JetDilation::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+
+  match '/tripit' => 'tripit#tripit'
+  match '/tripit_callback' => 'tripit#tripit_callback'
+  match '/tripit_profile' => 'tripit#tripit_profile'
+  match '/profile' => 'tripit#trip_it_profile'
+  match '/results' => 'home#results'
+  match '/logout' =>'tripit#logout'
   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"

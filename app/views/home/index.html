@@ -3,21 +3,23 @@
 <head>
   <meta charset=utf-8>
   <title>App</title>
-  <link rel="stylesheet" href="http://code.leafletjs.com/leaflet-0.3.1/leaflet.css" />
   <link rel="stylesheet" href="/assets/application.css" type="text/css" charset="utf-8">
-  <script src="http://code.leafletjs.com/leaflet-0.3.1/leaflet.js"></script>
   <script src="/assets/application.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script type="text/javascript" charset="utf-8">
-    var exports = this;
-    $(function(){
-      exports.app = new App({el: $("body")});      
-    });
-  </script>
   
 
 </head>
 <body>
-  
+  <div id='home'>
+    <h1 id ='mainHeader'>How Far Have you traveled....</h1>
+    <div id='symbols'>
+      <p> <img id='homeSpace' src='/assets/rocket.png' /> <span>in Space?</span></p>
+      <p> <img id='homeTime' src='/assets/time.png' /> <span>in Time?</span></p>
+    </div>
+    <div id='buttons'>
+      <h2>Login with Tripit (and soon Dopplr) to find out </h2>
+      <a href='/tripit'> <img src='/assets/tripit.png'></a>
+    </div>
+  </div>
+ 
 </body>
 </html>

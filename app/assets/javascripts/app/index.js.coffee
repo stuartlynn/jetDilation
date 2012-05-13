@@ -19,7 +19,8 @@ class App extends Spine.Controller
     #  @append(@items = new App.Items)
     #  ...
     @append new App.MapController()
-    
+    @append new App.StatsController()
+    App.Flight.fetch()
     Spine.Route.setup()    
 
 window.App = App

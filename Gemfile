@@ -18,11 +18,16 @@ group :assets do
   # gem 'therubyracer', :platform => :ruby
   gem 'spine-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'eco', '1.0.0'
+
 end
 
 gem 'tripit'
 gem 'jquery-rails'
 
+gem 'pry'
+gem 'redis'
+gem 'rest-client'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

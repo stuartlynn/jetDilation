@@ -1,0 +1,12 @@
+development:
+  host: localhost
+  thread_safe: true
+  port: 6379
+  
+
+
+test:
+  host: localhost
+  thread_safe: true
+  port: 6379
+  db: 1

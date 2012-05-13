@@ -1,0 +1,9 @@
+  <h1 style='display:none'> <span id='personName'></span> has traveled ... </h1>
+  <a id='logout' href='/logout'>logout</a>
+  <ul style='display:none'>
+    <li id='spaceStat' class='stat'><img  width=150 src='assets/rocket.png' /> <p> <span class='stats_val'></span> of the way to the Moon</p></li>
+    <li id='timeStat' class='stat'><img width=150 src='assets/time.png' /> <p> <span class='stats_val'></span> nanoseconds into the future</p></li>
+  </ul>
+
+  <p>Calculations based on all of your available flight data, using gravitational and lorentz time dilation (assuming a non-rotating earth and an average height for planes) and the average distance to the Moon from the Earth</p>
+
