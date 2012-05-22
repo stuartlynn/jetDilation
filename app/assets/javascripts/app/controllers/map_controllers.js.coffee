@@ -22,7 +22,7 @@ class App.MapController extends Spine.Controller
     App.Flight.bind 'create', @addFlight
 
   addFlight:(flight)=>
-    @drawFlight flight 
+    @drawFlight flight
 
 
   drawFlight:(flight)=>
