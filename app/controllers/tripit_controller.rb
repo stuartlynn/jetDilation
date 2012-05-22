@@ -15,7 +15,8 @@ class TripitController < ApplicationController
     @api_secret="18901feed6c02839a4b049844e9f12d947da97fe"
 
     consumer = OAuth::Consumer.new @api_key, @api_secret, { :site => "https://api.tripit.com" }
-    callback = CGI::escape("http:0.0.0.0:3000/tripit_callback")
+
+    callback = CGI::escape("http:#{request.env['HTTP_HOST']}/tripit_callback")
         
     request_token = consumer.get_request_token
     puts "request token is  #{request_token}"
